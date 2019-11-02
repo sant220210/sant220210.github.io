@@ -1,0 +1,713 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,700&display=swap&subset=chinese-traditional');
+
+/*Global styles*/
+
+body,button, input,select, textarea,h1 ,h2, h3, h4, h5, h6 { font-family:MicrosoftYaHei,'宋體',Tahoma,Helvetica,Arial,"\5b8b\4f53", sans-serif;}
+body,input,button,select,textarea{
+    font-family: "Helvetica Neue",'Noto Sans TC',  Helvetica, Arial, "微軟正黑體", "微软雅黑", "メイリオ", "맑은 고딕", sans-serif;
+    font-size:108%;
+    }
+    
+    h1,h2,h3,h4,h5,h6{   font-weight:normal; }
+    h1,h2,h3,h4,h5,h6{  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, 'Noto Sans TC';  }
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+html {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 10px;
+    box-sizing: border-box;  
+    overflow-x:hidden;
+}
+
+h3{
+   font-size: 2rem;
+   margin: 2rem 0;
+   text-align: center;
+   font-weight:700;
+}
+
+
+.works h2{
+    font-size: 1.5rem;
+    margin: 2rem 0;
+    text-align: center;
+    font-weight:400;
+    font-family: 'Noto Sans TC', sans-serif;
+ }
+
+h1{
+    font-size: 3rem;
+    margin: 2rem 0;
+    text-align: center;
+    font-weight:700;
+}
+
+p{
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+
+img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/*header*/
+header{
+    width: 100%;
+    height: 5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1500;
+}
+
+.container-nav{
+    width: 100%;
+    max-width: 98rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    
+}
+
+.container{
+    width: 100%;
+    max-width: 98rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    
+}
+
+nav.container{
+    overflow-y: hidden;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+    flex-direction: column;
+}
+
+.nav-brand{
+    width: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-icons i, a i{
+    font-size: 3.5rem;
+    color: #96a09b;
+    cursor: pointer;
+}
+
+.close i{
+    color: #eb648c;
+}
+
+.nav-list {
+    width: 25rem;
+    height: 100vh;
+    background-color: #d7d4ed;
+    position: fixed;
+    top: 0;
+    right: -26rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1500;
+    transition: all 650ms ease-in-out;
+}
+
+.nav-list.active{
+    right: 0;
+}
+
+.close{
+    position: absolute;
+    top: 1rem;
+    left: 1.5rem;
+}
+
+.nav-item{
+    margin: 1.5rem 0;
+}
+
+.nav-item a:hover{
+    color: #707070;
+}
+
+.nav-link{
+    font-size: 1.6rem;
+    color: rgba(145, 145, 145, 0.7);
+}
+
+/*web*/
+.hero{
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+/*首圖資料夾地址*/
+    background-image: url('./images/jay-mantri-TFyi0QOx08c-unsplash.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position:left top;
+    background-position: center center;
+    
+    position: relative;
+    size: cover;
+}
+
+.msg{
+    top: 30vh;
+    left: 11%;
+    max-width: 30rem;
+    transform: translateY(20%);
+    justify-content: flex-start;
+    color: rgb(35, 31, 32);
+    text-shadow: rgb(255, 255, 255) 0.1em 0.1em 0.2em;
+    position: relative;
+}
+
+.hero h2 {
+    line-height: 20px;
+    font-size: 3rem;
+    line-height: 35px;
+}
+
+
+
+#btn{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(auto, 1fr));
+    grid-gap: 2rem;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.button{
+    border-radius: 5px;
+    font-family: 'Noto Sans TC', sans-serif;
+    justify-content: center;
+    
+}
+
+
+#btn-1{
+    width: 15rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    background: rgb(84, 87, 88);
+    color: #fafafa;
+    transition: all 100ms ease-in-out;
+    text-align: center;
+    padding: 2rem auto;
+    margin-right: 1rem;
+    font-family: 'Noto Sans TC', sans-serif;
+    text-shadow: none;
+}
+
+
+.hero.msg#btn:hover{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#btn-2{
+    width: 15rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    background: rgb(204, 204, 205);
+    color: rgb(43, 31, 32);
+    transition: all 100ms ease-in-out;
+    text-shadow: none;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+
+/* intro */
+.intro{
+    margin: 0 auto;
+    margin-top: 15rem;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.intro-1{
+    width: 40%;
+    height: auto;
+    min-width: 25rem;
+    justify-content: center;
+}
+
+.photo {
+    width: 25rem;
+    object-fit: cover;
+    height: 25rem;
+    border-radius: 100%;
+    border: 2px solid rgb(43, 31, 32);;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 15rem;
+}
+
+.intro-2{
+    padding-left: 10rem;
+    width: 80%;
+    min-width: 25rem; 
+}
+
+.intro h2{
+    
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Noto Sans TC', sans-serif; 
+}
+
+.intro div{
+    padding-left: 2rem;
+}
+
+.slash{
+    
+    color: #eb648c;
+    font-size: 5rem;
+    font-weight: 100;
+    transform:rotate(45deg);
+    width: 1rem;
+}
+
+.intro p{
+    font-weight: 400;
+    text-align: left;
+    font-family: 'Noto Sans TC', sans-serif; 
+}
+
+.blue{
+    background-color: rgb(37, 119, 132);
+    border-radius: 5px;
+    color: white;
+}
+
+/*skills*/
+#skills{
+    margin: 0 auto;
+    width: 85%;
+    min-width: 25rem;
+    padding-top: 5.5rem;
+    padding-bottom: 5.5rem;
+    margin-top: 20rem;
+    position: relative;
+    transition: all 650ms ease-in-out;
+    border-top: 1.5px solid rgb(202, 221, 208);
+    border-bottom: 1.5px solid rgb(202, 221, 208);
+}
+
+#skills h3{
+    margin: 0 auto;
+    font-size: 3rem;
+    width: 20rem;
+    height: 20rem;
+    font-family: 'Noto Sans TC', sans-serif; 
+    font-weight: 700;
+    height: 4rem;
+    
+    
+    
+}
+
+
+.skill-img {
+    display: flex;
+    margin: 0 auto;
+    width: 30%;
+    
+    justify-content: space-around;
+}
+
+.skill-img img{
+    width: 20rem;
+    margin-top: 3rem;
+    
+}
+
+.skill{
+    margin-top: 3rem;
+    text-align: center;
+    color:　rgb(75, 80, 76);
+    font-family: 'Noto Sans TC', sans-serif;
+    
+}
+
+/*about me*/
+
+#about-me .container-fluid.row img,
+#about-me .container-fluid.row div{
+    padding: 0;
+}
+
+#about-me .personality-title{
+    font-weight: 700;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-me-title{
+    padding-bottom: 2rem;
+    width: 50rem;
+    width: 85%;
+    color: rgb(243, 125, 114);
+    font-size: 2.5rem;
+    font-weight: 700;
+    list-style-type: none;
+    border-bottom: 2px solid rgb(202, 221, 208);
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+#about-me{
+    margin: 0 auto;
+    margin-top: 30rem;
+    width: 85%;
+}
+
+#about-me p {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+#about-me .blue{
+    width: 17rem;
+    height: 4rem;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'Noto Sans TC', sans-serif; 
+}
+
+#about-me section{
+    margin: 0 auto;
+    width: 100%;
+    min-width: 25rem;
+    margin-top: 4rem;
+}
+
+#about-me i {
+    margin: 2rem auto;
+}
+
+.about-me-p{
+    margin: 2.5rem 0;
+}
+
+.about-me-img{
+   
+    height: 20rem;
+    overflow: hidden;
+}
+
+/*圖片顯示位置*/
+.about-me-img img{
+    margin-top: -10rem;
+}
+
+
+/* works */
+#works{
+text-align: center;
+width: 100%;
+margin: 0 auto;
+margin-top: 35rem;
+}
+
+#works p{
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: 'Noto Sans TC', sans-serif;
+    margin: 1rem auto;
+    width: 85%;
+    }
+
+
+#works h3{
+    font-size: 4rem;
+    font-weight: 600;
+    font-family: 'Noto Sans TC', sans-serif;
+    margin: 4rem auto;
+}
+
+#works .blue{
+    height: 4rem;
+    margin: 0 auto;
+    font-size: 3rem;
+    width: 17rem;
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.works-img{
+    height: auto;
+}
+
+.works-img img{
+    margin: 0 auto;
+    color: #3d3d3d;
+    transition: all 650ms ease-in-out;
+}
+
+.work-2{
+    
+    margin: 0 auto;
+}
+
+.work-2 .works-img img{
+   margin: 3rem auto;
+   width: 85%;
+}
+
+
+.work-intro{
+    margin-top: 2rem;
+}
+
+.work{
+    width: 85%;
+    
+    margin: 0 auto;
+   }
+
+  .work-intro{
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: 'Noto Sans TC', sans-serif;
+  }
+
+ 
+
+.text{
+    margin-bottom: 8rem; 
+    margin: 1rem;
+    text-align: center;
+}
+
+#works .text{
+    margin-bottom: 8rem;
+}
+
+.content {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-right: 0;
+    font-size: 2rem;
+}
+
+.content h2,
+.text h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.text h1, .text h2{
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.text p,
+.content p,
+.content text ul li,
+.nav-item{
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+footer{
+    padding-top: 4.5rem;
+    text-align: center; 
+    margin-top: 25rem;
+    width:100%;
+    height: 26rem;
+    background: rgb(249, 190, 184);
+    color: rgb(43, 31, 32);
+    position: absolute;
+}
+
+.dots{
+    display: flex;
+    position: relative;
+    float: right;
+    margin-top: 8rem;
+    margin-right: 5rem;
+}
+
+.dot{
+width:2rem;
+height: 2rem;
+border-radius: 50%;
+margin:  auto 0.5rem;
+}
+
+content .text{
+    text-align: left;
+}
+
+
+/*navbar size adjust*/
+
+@media screen and (max-width: 470px){
+    .dots{
+        justify-content: center;
+        margin-top: 5rem;
+    margin-right: 0;
+    float: none;
+    }
+   
+
+    #carouselExampleIndicators{
+        text-align: center;
+    }
+
+    #skills{
+        margin-top: 10rem;
+    }
+}
+
+
+
+@media screen and (max-width: 750px){
+    .intro{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-columns: minmax(25rem, auto);
+        grid-row-gap: 5rem;
+    }
+
+    .photo {
+        
+        width: 20rem;
+        object-fit: cover;
+        
+        height: 20rem;
+        border-radius: 100%;
+        border: 2px solid rgb(43, 31, 32);;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 15rem;
+    }
+
+    .intro-2{
+        padding-left: 5rem;
+        min-width: 25rem; 
+        text-align: center;
+    }
+}
+
+
+
+@media screen and (min-width: 700px){
+
+
+    #btn{
+        margin-top: 2.5rem;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    header{
+        height: 8rem; 
+    }
+
+    .nav-brand{
+        width: 3.5rem;
+    }
+    .nav-list{
+        width: initial;
+        height: initial;
+        background-color: transparent;
+        position: initial;
+        top: initial;
+        right: initial;
+        flex-direction: row;
+        transition: initial;
+        float: left;
+    }
+
+    .menu-icons{
+        display: none;
+    }
+
+    .nav-item{
+        margin: 0 2.5rem;
+    }
+
+    .nav-link,
+    .current{
+        color: #96a09b;
+        position: relative;
+        font-size: 1.3rem;
+    }
+
+   .nav-link::before,
+   .current::before{
+       content: '';
+       position: absolute;
+       left: 0;
+       bottom: -.5rem;
+       background-color: #eb648c;
+       width: 100%;
+       height: 2px;
+       transform: scale(0);
+       transform-origin: left;
+       transition: transform 650ms;
+   }
+
+   .current::before{
+       transform: scaleX(1);
+   }
+
+   .nav-link:hover::before{
+       transform:scaleX(1);
+   }
+
+   .main-message{
+       transform: translateY(75%);
+   }
+
+   
+}
