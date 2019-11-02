@@ -1,1 +1,15 @@
+.hero{
+   
+/*首圖資料夾地址*/
+    background-image: url('./images/jay-mantri-TFyi0QOx08c-unsplash.jpg');
+
+}
+
+
+/*第三部分圖片顯示位置*/
+/* 大於零 -> *往下/
+/* 小於零 -> 往上*/
+.about-me-img img{
+    margin-top: -10rem;
+}
 
